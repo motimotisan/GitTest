@@ -1,11 +1,13 @@
 .item {
-    background:  #0bd;
-color: #fff;
-margin: 10px;
-padding: 10px;
+    background: #0bd;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
 }
 
 .container {
     display: flex;
-    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: stretch;
+    height: 300px;
 }

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+    <style>
+        /* .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+            grid-template-rows: 200px 300px;
+        }
+
+        .item {
+            background: #0bd;
+            color: #fff;
+            padding: 10px;
+        } */
+        .position {
+            /* position: relative; */
+            border: 1px solid gray;
+            height: 2000px;
+            width: 600px;
+        }
+
+        .position div {
+            position: fixed;
+            top: 80px;
+            left: 200px;
+            background-color: aquamarine;
+        }
+        .childbox {
+            position: absolute;
+            height: 200px;
+            width: 200px;
+        }
+        #child1 {
+            top: 40px;
+            left: 160px;
+            background-color: #d95c5c;
+            z-index: 10;
+        }
+
+        #child2 {
+            top: 100px;
+            left: 240px;
+            background-color: #19b430;
+            z-index: 0;
+        }
+        .child {
+            position: absolute;
+            height: 100px;
+            width: 300px;
+            top: 400px;
+            left: 400px;
+            background-color: blue;            
+        }
+        .childli {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            top: 300px;
+            left: 500px;
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+
+<!-- <body>
+    <div class="container">
+        <div class="item">Item1</div>
+        <div class="item">Item2</div>
+        <div class="item">Item3</div>
+        <div class="item">Item4</div>
+        <div class="item">Item5</div>
+        <div class="item">Item6</div>
+        <div class="item">Item7</div>
+        <div class="item">Item8</div>
+    </div>
+</body> -->
+
+<body>
+    <div id="parent">
+        <div id="child1" class="childbox">child1</div>
+        <div id="child2" class="childbox">child2</div>
+    </div>
+    <div id="post">
+        <div id="child3" class="child">child3</div>
+        <div id="child4" class="childli">child4</div>
+    </div>
+    <!-- <section class="position">
+        <div>ウイルスに感染しました</div>
+    </section> -->
+</body>
+</html>
